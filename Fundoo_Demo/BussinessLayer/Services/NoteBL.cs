@@ -7,16 +7,17 @@ using System.Text;
 
 namespace BussinessLayer.Services
 {
-    public class NoteBL:INoteRL
-    {
-        INoteRL NoteRL;
-        public NoteBL(INoteRL NotesRL)
-        {
+    //public class NoteBL:INoteRL
+    //{
+    //    INoteRL NoteRL;
+    //    public NoteBL(INoteRL NotesRL)
+    //    {
             
-            this.NoteRL = NotesRL; 
+    //        this.NoteRL = NotesRL; 
 
 
-        }
+    //    }
+
 
         public NoteEntity Addnote(NoteModel note, long userid)
         {
