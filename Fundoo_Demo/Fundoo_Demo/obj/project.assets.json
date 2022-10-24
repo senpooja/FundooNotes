@@ -6094,11 +6094,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pooja\\Desktop\\CFP\\Fundoo_Demo\\Fundoo_Demo\\Fundoo_Demo.csproj",
+      "projectUniqueName": "C:\\Users\\pooja\\Desktop\\CFP\\fundoo git hub\\Fundoo_Demo\\Fundoo_Demo\\Fundoo_Demo.csproj",
       "projectName": "Fundoo_Demo",
-      "projectPath": "C:\\Users\\pooja\\Desktop\\CFP\\Fundoo_Demo\\Fundoo_Demo\\Fundoo_Demo.csproj",
+      "projectPath": "C:\\Users\\pooja\\Desktop\\CFP\\fundoo git hub\\Fundoo_Demo\\Fundoo_Demo\\Fundoo_Demo.csproj",
       "packagesPath": "C:\\Users\\pooja\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pooja\\Desktop\\CFP\\Fundoo_Demo\\Fundoo_Demo\\obj\\",
+      "outputPath": "C:\\Users\\pooja\\Desktop\\CFP\\fundoo git hub\\Fundoo_Demo\\Fundoo_Demo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pooja\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6115,8 +6115,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\pooja\\Desktop\\CFP\\Fundoo_Demo\\BussinessLayer\\BussinessLayer.csproj": {
-              "projectPath": "C:\\Users\\pooja\\Desktop\\CFP\\Fundoo_Demo\\BussinessLayer\\BussinessLayer.csproj"
+            "C:\\Users\\pooja\\Desktop\\CFP\\fundoo git hub\\Fundoo_Demo\\BussinessLayer\\BussinessLayer.csproj": {
+              "projectPath": "C:\\Users\\pooja\\Desktop\\CFP\\fundoo git hub\\Fundoo_Demo\\BussinessLayer\\BussinessLayer.csproj"
             }
           }
         }

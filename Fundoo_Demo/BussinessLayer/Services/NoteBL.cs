@@ -18,11 +18,11 @@ namespace BussinessLayer.Services
 
         }
 
-        public NoteEntity AddNote(NoteModel note, long userid)
+        public NoteEntity Addnote(NoteModel note, long userid)
         {
             try
             {
-                return this.NoteRL.AddNote(note, userid);
+                return this.NoteRL.Addnote(note, userid);
             }
             catch (Exception)
             {

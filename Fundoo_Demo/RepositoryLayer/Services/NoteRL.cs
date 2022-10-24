@@ -20,7 +20,7 @@ namespace RepositoryLayer.Services
             this.context = context;
             this.Config = Config;
         }
-        public NoteEntity AddNote(NoteModel notes, long userid)
+        public NoteEntity Addnote(NoteModel notes, long userid)
         {
             try
             {

@@ -17,12 +17,12 @@ namespace Fundoo_Demo.Controllers
             this.Notebl = Notebl;
         }
         [HttpPost("Add")]
-        public IActionResult AddNote(NoteModel addnote)
+        public IActionResult Addnote(NoteModel addnote)
         {
             try
             {
                 long userid = Convert.ToInt32(User.Claims.First(e => e.Type == "userid"));
-                var result = Notebl.AddNote(addnote, userid);
+                var result = Notebl.Addnote(addnote, userid);
                 if (result != null)
                 {
                     return this.Ok(new { Success = true, message = "NoteAdded Successfully", Response = result });
