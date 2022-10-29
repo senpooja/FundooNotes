@@ -1,0 +1,20 @@
+C:\Users\pooja\Desktop\CFP\Fundoo_Demo\CommanLayer\bin\Debug\netcoreapp3.1\CommanLayer.deps.json
+C:\Users\pooja\Desktop\CFP\Fundoo_Demo\CommanLayer\bin\Debug\netcoreapp3.1\CommanLayer.dll
+C:\Users\pooja\Desktop\CFP\Fundoo_Demo\CommanLayer\bin\Debug\netcoreapp3.1\CommanLayer.pdb
+C:\Users\pooja\Desktop\CFP\Fundoo_Demo\CommanLayer\obj\Debug\netcoreapp3.1\CommanLayer.csproj.AssemblyReference.cache
+C:\Users\pooja\Desktop\CFP\Fundoo_Demo\CommanLayer\obj\Debug\netcoreapp3.1\CommanLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pooja\Desktop\CFP\Fundoo_Demo\CommanLayer\obj\Debug\netcoreapp3.1\CommanLayer.AssemblyInfoInputs.cache
+C:\Users\pooja\Desktop\CFP\Fundoo_Demo\CommanLayer\obj\Debug\netcoreapp3.1\CommanLayer.AssemblyInfo.cs
+C:\Users\pooja\Desktop\CFP\Fundoo_Demo\CommanLayer\obj\Debug\netcoreapp3.1\CommanLayer.csproj.CoreCompileInputs.cache
+C:\Users\pooja\Desktop\CFP\Fundoo_Demo\CommanLayer\obj\Debug\netcoreapp3.1\CommanLayer.dll
+C:\Users\pooja\Desktop\CFP\Fundoo_Demo\CommanLayer\obj\Debug\netcoreapp3.1\CommanLayer.pdb
+E:\pooja cif\Fundoo_Demo\CommanLayer\bin\Debug\netcoreapp3.1\CommanLayer.deps.json
+E:\pooja cif\Fundoo_Demo\CommanLayer\bin\Debug\netcoreapp3.1\CommanLayer.dll
+E:\pooja cif\Fundoo_Demo\CommanLayer\bin\Debug\netcoreapp3.1\CommanLayer.pdb
+E:\pooja cif\Fundoo_Demo\CommanLayer\obj\Debug\netcoreapp3.1\CommanLayer.csproj.AssemblyReference.cache
+E:\pooja cif\Fundoo_Demo\CommanLayer\obj\Debug\netcoreapp3.1\CommanLayer.GeneratedMSBuildEditorConfig.editorconfig
+E:\pooja cif\Fundoo_Demo\CommanLayer\obj\Debug\netcoreapp3.1\CommanLayer.AssemblyInfoInputs.cache
+E:\pooja cif\Fundoo_Demo\CommanLayer\obj\Debug\netcoreapp3.1\CommanLayer.AssemblyInfo.cs
+E:\pooja cif\Fundoo_Demo\CommanLayer\obj\Debug\netcoreapp3.1\CommanLayer.csproj.CoreCompileInputs.cache
+E:\pooja cif\Fundoo_Demo\CommanLayer\obj\Debug\netcoreapp3.1\CommanLayer.dll
+E:\pooja cif\Fundoo_Demo\CommanLayer\obj\Debug\netcoreapp3.1\CommanLayer.pdb

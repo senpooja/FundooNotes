@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Fundoo_Demo",
+    "\\RepositoryLayer",
+    "\\RepositoryLayer\\AppContext",
+    "\\RepositoryLayer\\Entities",
+    "\\RepositoryLayer\\Services"
+  ],
+  "SelectedNode": "\\RepositoryLayer\\Entities\\CollaboratorEntity.cs",
+  "PreviewInSolutionExplorer": false
+}
