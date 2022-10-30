@@ -20,8 +20,8 @@ using BusinessLayer.Services;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using System.Text;
-//using Fundoo_Demo.Repository;
-//using Fundoo.Repository;
+using Fundoo_Demo.Repository;
+using Fundoo.Repository;
 using BussinessLayer.Interfaces;
 using BussinessLayer.Services;
 
@@ -51,8 +51,6 @@ namespace Fundoo_Demo
             services.AddTransient<INoteBL,NoteBL>();
             services.AddTransient<ICollabBL, CollabBL>();
             services.AddTransient<ICollabRL, CollabRL>();
-            services.AddTransient<ILabelBL, LabelBL>();
-            services.AddTransient<ILabelRL, LabelRL>();
 
             services.AddSwaggerGen();
             services.AddSwaggerGen(c =>
@@ -98,7 +96,7 @@ namespace Fundoo_Demo
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"])) //Configuration["JwtToken:SecretKey"]
                 };
             });
-           // services.AddSingleton<IJWTManagerRepository, JWTManagerRepository>();
+            services.AddSingleton<IJWTManagerRepository, JWTManagerRepository>();
             services.AddDataProtection();
 
             services.AddControllers();

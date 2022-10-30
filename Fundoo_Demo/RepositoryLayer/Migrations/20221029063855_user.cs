@@ -48,7 +48,7 @@ namespace RepositoryLayer.Migrations
                         column: x => x.userid,
                         principalTable: "Users",
                         principalColumn: "UserId",
-                        onDelete: ReferentialAction.NoAction);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(

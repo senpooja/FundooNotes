@@ -16,7 +16,11 @@ namespace BussinessLayer.Services
         {
 
             this.NoteRL = NoteRL;
-         }
+
+
+        }
+
+
         public NoteEntity AddNote(NoteModel notes, long userid)
         {
             try
