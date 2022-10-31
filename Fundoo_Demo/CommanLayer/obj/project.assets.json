@@ -3608,11 +3608,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\pooja cif\\Fundoo_Demo\\CommanLayer\\CommanLayer.csproj",
+      "projectUniqueName": "C:\\Users\\91992\\Desktop\\git hub proj\\Fundoo_Demo\\CommanLayer\\CommanLayer.csproj",
       "projectName": "CommanLayer",
-      "projectPath": "E:\\pooja cif\\Fundoo_Demo\\CommanLayer\\CommanLayer.csproj",
+      "projectPath": "C:\\Users\\91992\\Desktop\\git hub proj\\Fundoo_Demo\\CommanLayer\\CommanLayer.csproj",
       "packagesPath": "C:\\Users\\91992\\.nuget\\packages\\",
-      "outputPath": "E:\\pooja cif\\Fundoo_Demo\\CommanLayer\\obj\\",
+      "outputPath": "C:\\Users\\91992\\Desktop\\git hub proj\\Fundoo_Demo\\CommanLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\91992\\AppData\\Roaming\\NuGet\\NuGet.Config",

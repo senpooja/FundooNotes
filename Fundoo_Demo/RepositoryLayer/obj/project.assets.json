@@ -7744,11 +7744,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\pooja cif\\Fundoo_Demo\\RepositoryLayer\\RepositoryLayer.csproj",
+      "projectUniqueName": "C:\\Users\\91992\\Desktop\\git hub proj\\Fundoo_Demo\\RepositoryLayer\\RepositoryLayer.csproj",
       "projectName": "RepositoryLayer",
-      "projectPath": "E:\\pooja cif\\Fundoo_Demo\\RepositoryLayer\\RepositoryLayer.csproj",
+      "projectPath": "C:\\Users\\91992\\Desktop\\git hub proj\\Fundoo_Demo\\RepositoryLayer\\RepositoryLayer.csproj",
       "packagesPath": "C:\\Users\\91992\\.nuget\\packages\\",
-      "outputPath": "E:\\pooja cif\\Fundoo_Demo\\RepositoryLayer\\obj\\",
+      "outputPath": "C:\\Users\\91992\\Desktop\\git hub proj\\Fundoo_Demo\\RepositoryLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\91992\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7765,8 +7765,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "E:\\pooja cif\\Fundoo_Demo\\CommanLayer\\CommanLayer.csproj": {
-              "projectPath": "E:\\pooja cif\\Fundoo_Demo\\CommanLayer\\CommanLayer.csproj"
+            "C:\\Users\\91992\\Desktop\\git hub proj\\Fundoo_Demo\\CommanLayer\\CommanLayer.csproj": {
+              "projectPath": "C:\\Users\\91992\\Desktop\\git hub proj\\Fundoo_Demo\\CommanLayer\\CommanLayer.csproj"
             }
           }
         }
