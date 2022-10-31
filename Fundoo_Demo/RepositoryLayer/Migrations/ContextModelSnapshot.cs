@@ -44,6 +44,31 @@ namespace RepositoryLayer.Migrations
                     b.ToTable("CollaboratorTable");
                 });
 
+            modelBuilder.Entity("RepositoryLayer.Entities.LabelEntity", b =>
+                {
+                    b.Property<long>("LabelId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("LabelName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<long>("NoteID")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("userid")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("LabelId");
+
+                    b.HasIndex("NoteID");
+
+                    b.HasIndex("userid");
+
+                    b.ToTable("Lable");
+                });
+
             modelBuilder.Entity("RepositoryLayer.Entities.NoteEntity", b =>
                 {
                     b.Property<long>("NoteID")
@@ -121,6 +146,21 @@ namespace RepositoryLayer.Migrations
                         .IsRequired();
 
                     b.HasOne("RepositoryLayer.Entity.UserEntity", "user")
+                        .WithMany()
+                        .HasForeignKey("userid")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("RepositoryLayer.Entities.LabelEntity", b =>
+                {
+                    b.HasOne("RepositoryLayer.Entities.NoteEntity", "note")
+                        .WithMany()
+                        .HasForeignKey("NoteID")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("RepositoryLayer.Entity.UserEntity", "User")
                         .WithMany()
                         .HasForeignKey("userid")
                         .OnDelete(DeleteBehavior.NoAction)

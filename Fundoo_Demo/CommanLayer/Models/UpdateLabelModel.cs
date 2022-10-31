@@ -5,12 +5,12 @@ using System.Text;
 namespace CommanLayer.Models
 {
    
-        //public class UpdateLableModel
-        //{
+        public class UpdateLableModel
+        {
 
-        //    public string LabelName { get; set; }
+            public string LabelName { get; set; }
 
-        //    public long NoteID { get; set; }
+            public long NoteID { get; set; }
 
-        //}
+        }
     }
