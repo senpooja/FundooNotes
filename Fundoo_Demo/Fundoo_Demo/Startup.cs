@@ -38,22 +38,29 @@ namespace Fundoo_Demo
 
         // This method gets called by the runtime. Use this method to add services to the container.
 
-    
-              public void ConfigureServices(IServiceCollection services)
+
+        public void ConfigureServices(IServiceCollection services)
         {
+            services.AddStackExchangeRedisCache(options =>
+            {
+                options.Configuration = "localhost:6379";
+            });
+            services.AddMemoryCache();
 
 
             services.AddDbContext<Context>(opts => opts.UseSqlServer(Configuration["ConnectionString:Fundoo_Demo"]));
+            services.AddMemoryCache();
+
             services.AddControllers();
+            // services.AddControllers();
             services.AddTransient<IUserRL, UserRL>();
             services.AddTransient<IUserBL, UserBL>();
             services.AddTransient<INoteRL, NoteRL>();
-            services.AddTransient<INoteBL,NoteBL>();
+            services.AddTransient<INoteBL, NoteBL>();
             services.AddTransient<ICollabBL, CollabBL>();
             services.AddTransient<ICollabRL, CollabRL>();
             services.AddTransient<ILabelBL, LabelBL>();
             services.AddTransient<ILabelRL, LabelRL>();
-
             services.AddSwaggerGen();
             services.AddSwaggerGen(c =>
             {
@@ -78,7 +85,7 @@ namespace Fundoo_Demo
 
                 c.AddSecurityRequirement(new OpenApiSecurityRequirement
                 {
-              { securitySchema, new[] { "Bearer" } }});
+                    { securitySchema, new[] { "Bearer" } } });
 
             });
 
@@ -98,10 +105,14 @@ namespace Fundoo_Demo
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"])) //Configuration["JwtToken:SecretKey"]
                 };
             });
-           // services.AddSingleton<IJWTManagerRepository, JWTManagerRepository>();
-            services.AddDataProtection();
+            
+        
 
-            services.AddControllers();
+        
+            //services.AddSingleton<IJWTManagerRepository, JWTManagerRepository>();
+            //services.AddDataProtection(); 
+            
+
 
 
 

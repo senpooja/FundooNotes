@@ -121,5 +121,30 @@ namespace BussinessLayer.Services
             }
 
         }
+        public IEnumerable<LabelEntity> GetlabelsUsingNoteid(long noteid, long userid)
+        {
+            try
+            {
+                return this.ilabelRL.GetlabelsUsingNoteid(noteid, userid);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+        public IEnumerable<LabelEntity> RenameLabel(long userID, string oldLabelName, string labelName)
+        {
+            try
+            {
+                return this.ilabelRL.RenameLabel(userID, oldLabelName, labelName);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+        }
     }
 }

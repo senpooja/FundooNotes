@@ -2,6 +2,8 @@
 using CloudinaryDotNet.Actions;
 using CommanLayer.Models;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Caching.Distributed;
+using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Configuration;
 using Microsoft.VisualStudio.Services.Account;
 using RepositoryLayer.AddContext;
@@ -20,11 +22,14 @@ namespace RepositoryLayer.Services
     {
         public readonly Context context;
         private readonly IConfiguration Config;
-
-        public NoteRL(Context context, IConfiguration Config)
+       private readonly IMemoryCache memoryCache;
+        private readonly IDistributedCache distributedCache;
+        public NoteRL(Context context, IConfiguration Config, IMemoryCache memoryCache, IDistributedCache distributedCache)
         {
             this.context = context;
             this.Config = Config;
+            this.memoryCache = memoryCache;
+            this.distributedCache = distributedCache;
         }
         public NoteEntity AddNote(NoteModel notes, long userid)
         {
@@ -209,6 +214,15 @@ namespace RepositoryLayer.Services
             {
                 throw new Exception(ex.Message);
             }
-        } 
+        }
+        public IEnumerable<NoteEntity> GetAllNotes()
+        {
+            return context.Notes.ToList();
+        }
+        public IEnumerable<NoteEntity> GetAllNotesbyuserID(long userid)
+        {
+            return context.Notes.Where(n => n.userid == userid).ToList();
+        }
+
     }
 }

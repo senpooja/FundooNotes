@@ -10,7 +10,7 @@ namespace CommanLayer.Models
 
             public string LabelName { get; set; }
 
-            public long NoteID { get; set; }
+           public long NoteID { get; set; }
 
         }
     }

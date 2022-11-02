@@ -30,3 +30,19 @@ E:\pooja cif\Fundoo_Demo\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer
 E:\pooja cif\Fundoo_Demo\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.dll
 E:\pooja cif\Fundoo_Demo\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.pdb
 E:\pooja cif\Fundoo_Demo\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.genruntimeconfig.cache
+C:\Users\91992\Desktop\git hub proj\Fundoo_Demo\RepositoryLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.deps.json
+C:\Users\91992\Desktop\git hub proj\Fundoo_Demo\RepositoryLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.runtimeconfig.json
+C:\Users\91992\Desktop\git hub proj\Fundoo_Demo\RepositoryLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.runtimeconfig.dev.json
+C:\Users\91992\Desktop\git hub proj\Fundoo_Demo\RepositoryLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.dll
+C:\Users\91992\Desktop\git hub proj\Fundoo_Demo\RepositoryLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.pdb
+C:\Users\91992\Desktop\git hub proj\Fundoo_Demo\RepositoryLayer\bin\Debug\netcoreapp3.1\CommanLayer.dll
+C:\Users\91992\Desktop\git hub proj\Fundoo_Demo\RepositoryLayer\bin\Debug\netcoreapp3.1\CommanLayer.pdb
+C:\Users\91992\Desktop\git hub proj\Fundoo_Demo\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.csproj.AssemblyReference.cache
+C:\Users\91992\Desktop\git hub proj\Fundoo_Demo\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\91992\Desktop\git hub proj\Fundoo_Demo\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.AssemblyInfoInputs.cache
+C:\Users\91992\Desktop\git hub proj\Fundoo_Demo\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.AssemblyInfo.cs
+C:\Users\91992\Desktop\git hub proj\Fundoo_Demo\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.csproj.CoreCompileInputs.cache
+C:\Users\91992\Desktop\git hub proj\Fundoo_Demo\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.csproj.CopyComplete
+C:\Users\91992\Desktop\git hub proj\Fundoo_Demo\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.dll
+C:\Users\91992\Desktop\git hub proj\Fundoo_Demo\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.pdb
+C:\Users\91992\Desktop\git hub proj\Fundoo_Demo\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.genruntimeconfig.cache

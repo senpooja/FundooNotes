@@ -5,7 +5,9 @@ using RepositoryLayer.Entities;
 using RepositoryLayer.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using Context = RepositoryLayer.AddContext.Context;
 
 
 namespace RepositoryLayer.Services
@@ -13,11 +15,11 @@ namespace RepositoryLayer.Services
     public class LabelRL : ILabelRL
     {
 
-        Context Context;
+       private readonly Context context;
 
-        public LabelRL(Context Context)
+        public LabelRL(Context context)
         {
-            this.Context = Context;
+            this.context = context;
         }
 
 
@@ -27,7 +29,8 @@ namespace RepositoryLayer.Services
         {
             try
             {
-                var validNotesAndUser = this.Context.Users.Where(e => e.UserId == jwtUserId);
+                
+               var validNotesAndUser = this.context.Users.Where(e => e.UserId == jwtUserId);
 
                 if (validNotesAndUser != null)
                 {
@@ -37,8 +40,8 @@ namespace RepositoryLayer.Services
                     label.UserId = jwtUserId;
                     label.LabelName = model.LabelName;
 
-                    this.Context.Add(label);
-                    this.Context.SaveChanges();
+                    this.context.Add(label);
+                    this.context.SaveChanges();
 
                     LabelResponseModel responseModel = new LabelResponseModel();
 
@@ -68,7 +71,7 @@ namespace RepositoryLayer.Services
             try
             {
 
-                var result = this.Context.lable.Where(x => x.UserId == jwtUserId);
+                var result = this.context.Lable.Where(x => x.UserId == jwtUserId);
                 return result;
 
             }
@@ -83,9 +86,9 @@ namespace RepositoryLayer.Services
         {
             try
             {
-                var validUserId = this.Context.Users.Where(e => e.UserId == jwtUserId);
+                var validUserId = this.context.Users.Where(e => e.UserId == jwtUserId);
 
-                var response = this.Context.lable.FirstOrDefault(e => e.LabelID == lableId && e.UserId == jwtUserId);
+                var response = this.context.Lable.FirstOrDefault(e => e.LabelID == lableId && e.UserId == jwtUserId);
 
                 if (validUserId != null && response != null)
                 {
@@ -114,10 +117,10 @@ namespace RepositoryLayer.Services
         {
             try
             {
-                var validUserId = this.Context.Users.Where(e => e.UserId == jwtUserId);
+                var validUserId = this.context.Users.Where(e => e.UserId == jwtUserId);
                 if (validUserId != null)
                 {
-                    return this.Context.lable.FirstOrDefault(e => e.LabelID == lableId);
+                    return this.context.Lable.FirstOrDefault(e => e.LabelID == lableId);
                 }
 
                 return null;
@@ -133,16 +136,16 @@ namespace RepositoryLayer.Services
         {
             try
             {
-                var validUserId = this.Context.Users.Where(e => e.UserId == jwtUserId);
+                var validUserId = this.context.Users.Where(e => e.UserId == jwtUserId);
 
-                var response = this.Context.lable.FirstOrDefault(e => e.LabelID == updateLable.LabelID);
+                var response = this.context.Lable.FirstOrDefault(e => e.LabelID == updateLable.LabelID);
 
                 if (validUserId != null && response != null)
                 {
                     updateLable.LabelName = model.LabelName;
                     updateLable.noteID = model.NoteID;
 
-                    this.Context.SaveChanges();
+                    this.context.SaveChanges();
 
 
                     LabelResponseModel models = new LabelResponseModel();
@@ -169,11 +172,11 @@ namespace RepositoryLayer.Services
         {
             try
             {
-                var validUserId = this.Context.Users.Where(e => e.UserId == jwtUserId);
+                var validUserId = this.context.Users.Where(e => e.UserId == jwtUserId);
                 if (validUserId != null)
                 {
-                    this.Context.lable.Remove(lable);
-                    this.Context.SaveChanges();
+                    this.context.Lable.Remove(lable);
+                    this.context.SaveChanges();
                 }
             }
             catch (Exception ex)
@@ -181,7 +184,45 @@ namespace RepositoryLayer.Services
                 throw;
             }
         }
+        public IEnumerable<LabelEntity> GetlabelsUsingNoteid(long noteid, long userid)
+        {
+            return context.Lable.Where(e => e.noteID == noteid && e.UserId == userid).ToList();
+        }
+        public bool RemoveLabel(long userID, string labelName)
+        {
+            try
+            {
+                var result = this.context.Lable.FirstOrDefault(x => x.UserId == userID && x.LabelName == labelName);
+                if (result != null)
+                {
+                    context.Remove(result);
+                    context.SaveChanges();
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception)
+            {
 
-
+                throw;
+            }
+        }
+        public IEnumerable<LabelEntity> RenameLabel(long userID, string oldLabelName, string labelName)
+        {
+            IEnumerable<LabelEntity> labels;
+            labels = context.Lable.Where(x => x.UserId == userID && x.LabelName == oldLabelName).ToList();
+            if (labels != null)
+            {
+                foreach (var newlabel in labels)
+                {
+                    newlabel.LabelName = labelName;
+                }
+                context.SaveChanges();
+                return labels;
+            }
+            return null;
+        }
     }
+
+
 }

@@ -10,8 +10,8 @@ namespace RepositoryLayer.Interfaces
     {
         public CollabResponseModel AddCollaborate(long notesId, long jwtUserId, CollaboratedModel model);
         public void DeleteCollab(CollaboratorEntity collab);
-        public CollaboratorEntity GetCollabWithId(long collabId);
+      //  public CollaboratorEntity GetCollabWithId(long collabId);
 
-        public IEnumerable<CollaboratorEntity> GetCollab(long userID);
+        public IEnumerable<CollaboratorEntity> GetAllByNoteID(long noteID);
     }
 }

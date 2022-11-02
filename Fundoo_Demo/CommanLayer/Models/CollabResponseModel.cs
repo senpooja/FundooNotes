@@ -12,6 +12,6 @@ namespace CommanLayer.Models
 
         public long noteID { get; set; }
 
-        public long UserId { get; set; }
+       // public long UserId { get; set; }
     }
 }

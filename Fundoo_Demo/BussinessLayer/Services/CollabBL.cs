@@ -47,28 +47,15 @@ namespace BussinessLayer.Services
             }
         }
 
-        public CollaboratorEntity GetCollabWithId(long collabId)
-        {
-
-            try
-            {
-                return IcollabRL.GetCollabWithId(collabId);
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-
-        }
+       
 
 
 
-        public IEnumerable<CollaboratorEntity> GetCollab(long userID)
+        public IEnumerable<CollaboratorEntity> GetAllByNoteID(long NoteID)
         {
             try
             {
-                return IcollabRL.GetCollab(userID);
+                return IcollabRL.GetAllByNoteID(NoteID);
             }
             catch (Exception)
             {

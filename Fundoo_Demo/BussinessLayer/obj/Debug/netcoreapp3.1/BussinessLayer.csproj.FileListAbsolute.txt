@@ -28,3 +28,18 @@ E:\pooja cif\Fundoo_Demo\BussinessLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.
 E:\pooja cif\Fundoo_Demo\BussinessLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.pdb
 E:\pooja cif\Fundoo_Demo\BussinessLayer\bin\Debug\netcoreapp3.1\CommanLayer.pdb
 E:\pooja cif\Fundoo_Demo\BussinessLayer\obj\Debug\netcoreapp3.1\BussinessLayer.csproj.CopyComplete
+C:\Users\91992\Desktop\git hub proj\Fundoo_Demo\BussinessLayer\bin\Debug\netcoreapp3.1\BussinessLayer.deps.json
+C:\Users\91992\Desktop\git hub proj\Fundoo_Demo\BussinessLayer\bin\Debug\netcoreapp3.1\BussinessLayer.dll
+C:\Users\91992\Desktop\git hub proj\Fundoo_Demo\BussinessLayer\bin\Debug\netcoreapp3.1\BussinessLayer.pdb
+C:\Users\91992\Desktop\git hub proj\Fundoo_Demo\BussinessLayer\bin\Debug\netcoreapp3.1\CommanLayer.dll
+C:\Users\91992\Desktop\git hub proj\Fundoo_Demo\BussinessLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.dll
+C:\Users\91992\Desktop\git hub proj\Fundoo_Demo\BussinessLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.pdb
+C:\Users\91992\Desktop\git hub proj\Fundoo_Demo\BussinessLayer\bin\Debug\netcoreapp3.1\CommanLayer.pdb
+C:\Users\91992\Desktop\git hub proj\Fundoo_Demo\BussinessLayer\obj\Debug\netcoreapp3.1\BussinessLayer.csproj.AssemblyReference.cache
+C:\Users\91992\Desktop\git hub proj\Fundoo_Demo\BussinessLayer\obj\Debug\netcoreapp3.1\BussinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\91992\Desktop\git hub proj\Fundoo_Demo\BussinessLayer\obj\Debug\netcoreapp3.1\BussinessLayer.AssemblyInfoInputs.cache
+C:\Users\91992\Desktop\git hub proj\Fundoo_Demo\BussinessLayer\obj\Debug\netcoreapp3.1\BussinessLayer.AssemblyInfo.cs
+C:\Users\91992\Desktop\git hub proj\Fundoo_Demo\BussinessLayer\obj\Debug\netcoreapp3.1\BussinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\91992\Desktop\git hub proj\Fundoo_Demo\BussinessLayer\obj\Debug\netcoreapp3.1\BussinessLayer.csproj.CopyComplete
+C:\Users\91992\Desktop\git hub proj\Fundoo_Demo\BussinessLayer\obj\Debug\netcoreapp3.1\BussinessLayer.dll
+C:\Users\91992\Desktop\git hub proj\Fundoo_Demo\BussinessLayer\obj\Debug\netcoreapp3.1\BussinessLayer.pdb

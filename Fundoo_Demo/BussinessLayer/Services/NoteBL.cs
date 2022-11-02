@@ -108,5 +108,29 @@ namespace BussinessLayer.Services
                 throw;
             }
         }
+        public IEnumerable<NoteEntity> GetAllNotes()
+        {
+            try
+            {
+                return this.NoteRL.GetAllNotes();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+        public IEnumerable<NoteEntity> GetAllNotesbyuserID(long userid)
+        {
+            try
+            {
+                return this.NoteRL.GetAllNotesbyuserID(userid);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
     }
 }

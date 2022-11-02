@@ -40,7 +40,7 @@ namespace RepositoryLayer.Services
 
                 responseModel.CollaboratorID = collaborate.CollaboratorID;
                 responseModel.noteID = collaborate.NoteID;
-                responseModel.UserId = collaborate.userid;
+               // responseModel.UserId = collaborate.userid;
                 responseModel.CollaboratedEmail = collaborate.CollaboratedEmail;
 
                 return responseModel;
@@ -67,46 +67,11 @@ namespace RepositoryLayer.Services
 
 
 
-        public CollaboratorEntity GetCollabWithId(long collabId)
+        public IEnumerable<CollaboratorEntity> GetAllByNoteID(long noteID)
         {
-            try
-            {
-                var result = this.context.CollaboratorTable.FirstOrDefault(e => e.CollaboratorID == collabId);
-
-                if (result != null)
-                {
-                    return result;
-                }
-                else
-                {
-                    return null;
-                }
-            }
-            catch (Exception ex)
-            {
-                throw;
-            }
+            return context.CollaboratorTable.Where(n => n.NoteID == noteID).ToList();
         }
-
-
-        public IEnumerable<CollaboratorEntity> GetCollab(long userID)
-        {
-            try
-            {
-                var result = context.CollaboratorTable.Where(x => x.userid == userID);
-                if (result != null)
-                {
-                    return result;
-                }
-                else
-                {
-                    return null;
-                }
-            }
-            catch (Exception)
-            {
-                throw;
-            }
+       
         }
     }
-}
+

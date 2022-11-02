@@ -14,7 +14,9 @@ namespace RepositoryLayer.Interfaces
         public LabelEntity GetLablesWithId(long lableId, long jwtUserId);
         public LabelResponseModel UpdateLable(LabelEntity updateLable, UpdateLableModel model, long jwtUserId);
         public void DeleteLable(LabelEntity lable, long jwtUserId);
+        public IEnumerable<LabelEntity> GetlabelsUsingNoteid(long noteid, long userid);
 
+        public IEnumerable<LabelEntity> RenameLabel(long userID, string oldLabelName, string labelName);
 
     }
 }

@@ -17,6 +17,8 @@ namespace BussinessLayer.Interfaces
         public bool Archieved(long NoteID, long userId);
         public NoteEntity ColorNote(long NoteId, string color);
         public string Imaged(long NoteID, long userId, IFormFile image);
+        public IEnumerable<NoteEntity> GetAllNotes();
+        public IEnumerable<NoteEntity> GetAllNotesbyuserID(long userid);
 
 
     }
